@@ -36,6 +36,12 @@ function Copyright() {
   );
 }
 
+const MenuTitle = () => {
+  return(
+    <div>Menu Bar</div>
+  )
+}
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -161,7 +167,7 @@ export default function Dashboard() {
       >
         <div className={classes.toolbarIcon}>
           <IconButton onClick={handleDrawerClose}>
-            <ChevronLeftIcon />
+            <MenuTitle /> <ChevronLeftIcon />
           </IconButton>
         </div>
         <Divider />
